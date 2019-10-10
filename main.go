@@ -2,7 +2,7 @@ package main
 
 import (
 	"auth/models"
-	"auth/router"
+	"auth/routes"
 )
 
 func init()  {
@@ -10,6 +10,6 @@ func init()  {
 }
 
 func main()  {
-	r := router.Setup()
+	r := routes.Setup()
 	r.Run(":3000")
 }
